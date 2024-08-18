@@ -5,7 +5,7 @@ This project demonstrates a basic Solana smart contract for a counter applicatio
 ## Prerequisites
 Clone the repo
 ```sh
-git clone https://github.com/yourusername/solana-counter.git
+git clone https://github.com/sainikunal/solana-counter.git
 cd solana-counter
 ```
 
