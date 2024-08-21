@@ -10,7 +10,6 @@ const programId = new PublicKey('4czQLEmBScpEwEGK9ZSPbYCDR382MmqdsrPufmpMVsZB');
 
 const program = new Program<SolanaCounter>(
     require('../target/idl/solana_counter.json'),
-    // programId,
     provider
 )
 

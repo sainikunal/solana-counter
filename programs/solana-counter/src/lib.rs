@@ -28,12 +28,13 @@ pub mod solana_counter {
 
 #[account]
 pub struct Counter {
-    pub count: u64
+    pub count: u64,
+    pub bump: u8,
 }
 
 #[derive(Accounts)]
 pub struct Initialize<'info> {
-    #[account(init, payer = user, space = Counter::SPACE)]
+    #[account(init, payer = user, space = Counter::SPACE, seeds=[b"counter".as_ref()], bump)]
     pub counter: Account<'info, Counter>,
 
     #[account(mut)]
